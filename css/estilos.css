@@ -1,0 +1,1027 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/**-----RESET-----*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/**-----BODY-----**/
+body {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal; }
+
+/**-----INDEX-----**/
+/**-------HEADER-BOOTSTRAP-------**/
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1; }
+  header .menu-ajustes {
+    background-color: white;
+    padding: 14px 50px;
+    box-shadow: 0 2px 5px rgba(42, 42, 42, 0.085); }
+  header nav div a img {
+    width: auto;
+    height: 30px; }
+  header nav div .navbar-collapse {
+    flex-grow: 0; }
+    header nav div .navbar-collapse ul li .tamano-link {
+      font-size: 16px;
+      font-weight: 400; }
+    header nav div .navbar-collapse ul li ul .tamano-link-dropdown {
+      font-size: 16px;
+      font-weight: 400; }
+
+/**-------HEADER-BOOTSTRAP-MEDIA-QUERYS-------**/
+@media screen and (max-width: 600px) {
+  header .menu-ajustes {
+    padding: 14px 5px; } }
+
+/**-----HISTORIA-----**/
+/**-----HERO-HISTORIA-BOOTSTRAP-----**/
+.hero-historia div div div .carusel-contenido h5 {
+  font-size: 32px;
+  font-weight: bold; }
+
+.hero-historia div div div .carusel-contenido p {
+  font-size: 17px; }
+
+.hero-historia div .profuncidad-carusel {
+  z-index: 0; }
+
+/**-----VARIBLES-----**/
+/**-----LISTAS-----**/
+/**-----INDEX-----**/
+/**-----EXTENDS-----**/
+.historia, .ubicacion {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+  color: #676767;
+  margin: 50px 0; }
+  .historia div, .ubicacion div {
+    width: 50%; }
+    .historia div h2, .ubicacion div h2 {
+      font-size: 30px;
+      color: #4ba9ab;
+      margin-bottom: 20px;
+      font-weight: bold; }
+    .historia div p, .ubicacion div p {
+      font-size: 17px;
+      text-align: justify;
+      margin-bottom: 30px; }
+    .historia div a, .ubicacion div a {
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.9) !important;
+      font-weight: bold;
+      font-size: 15px;
+      background: #4da078;
+      padding: 15px 50px;
+      border-radius: 5px; }
+      .historia div a:hover, .ubicacion div a:hover {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.242); }
+  .historia img, .ubicacion img {
+    width: 25%;
+    border-radius: 3px; }
+
+.articulos .band .item-1 .card, .articulos .band .item-2 .card, .articulos .band .item-3 .card, .articulos .band .item-4 .card, .articulos .band .item-5 .card, .articulos .band .item-6 .card, .articulos .band .item-7 .card {
+  background: white;
+  color: #444;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  position: relative;
+  top: 0;
+  transition: all .1s ease-in;
+  text-decoration: none; }
+  .articulos .band .item-1 .card:hover, .articulos .band .item-2 .card:hover, .articulos .band .item-3 .card:hover, .articulos .band .item-4 .card:hover, .articulos .band .item-5 .card:hover, .articulos .band .item-6 .card:hover, .articulos .band .item-7 .card:hover {
+    top: -2px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2); }
+  .articulos .band .item-1 .card .thumb, .articulos .band .item-2 .card .thumb, .articulos .band .item-3 .card .thumb, .articulos .band .item-4 .card .thumb, .articulos .band .item-5 .card .thumb, .articulos .band .item-6 .card .thumb, .articulos .band .item-7 .card .thumb {
+    padding-bottom: 60%;
+    background-size: cover;
+    background-position: center center; }
+  .articulos .band .item-1 .card article, .articulos .band .item-2 .card article, .articulos .band .item-3 .card article, .articulos .band .item-4 .card article, .articulos .band .item-5 .card article, .articulos .band .item-6 .card article, .articulos .band .item-7 .card article {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .articulos .band .item-1 .card article h3, .articulos .band .item-2 .card article h3, .articulos .band .item-3 .card article h3, .articulos .band .item-4 .card article h3, .articulos .band .item-5 .card article h3, .articulos .band .item-6 .card article h3, .articulos .band .item-7 .card article h3 {
+      font-size: 20px;
+      margin: 0;
+      color: #333; }
+    .articulos .band .item-1 .card article p, .articulos .band .item-2 .card article p, .articulos .band .item-3 .card article p, .articulos .band .item-4 .card article p, .articulos .band .item-5 .card article p, .articulos .band .item-6 .card article p, .articulos .band .item-7 .card article p {
+      flex: 1;
+      line-height: 1.4;
+      margin-top: 10px; }
+      .articulos .band .item-1 .card article p:hover, .articulos .band .item-2 .card article p:hover, .articulos .band .item-3 .card article p:hover, .articulos .band .item-4 .card article p:hover, .articulos .band .item-5 .card article p:hover, .articulos .band .item-6 .card article p:hover, .articulos .band .item-7 .card article p:hover {
+        color: #4ba9ab; }
+    .articulos .band .item-1 .card article span, .articulos .band .item-2 .card article span, .articulos .band .item-3 .card article span, .articulos .band .item-4 .card article span, .articulos .band .item-5 .card article span, .articulos .band .item-6 .card article span, .articulos .band .item-7 .card article span {
+      font-size: 12px;
+      font-weight: bold;
+      color: #999;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      margin: 2em 0 0 0; }
+
+/**-----INDEX-----**/
+.hero {
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.216) 0%, rgba(0, 0, 0, 0.851) 100%), url(../img/centro.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: calc(100vh - 72px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  text-align: center; }
+  .hero p {
+    font-size: 20px;
+    margin: 30px 0 30px 0; }
+  .hero h1 {
+    font-size: 60px;
+    font-weight: bold; }
+
+.ubicacion {
+  flex-direction: row-reverse; }
+
+.articulos {
+  background-color: rgba(233, 233, 233, 0.692); }
+  .articulos .articulos-subtitulo {
+    text-align: center;
+    margin: 50px;
+    padding-top: 40px;
+    color: #4ba9ab;
+    font-size: 32px;
+    font-weight: bold; }
+  .articulos .band {
+    width: 92%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr); }
+    .articulos .band .item-1 {
+      grid-column: 1 / span 2; }
+      .articulos .band .item-1 .card .thumb {
+        background-image: url(../img/centro.png); }
+      .articulos .band .item-1 .card article h3 {
+        font-size: 24px; }
+    .articulos .band .item-2 .card .thumb {
+      background-image: url(../img/noticia2.png); }
+    .articulos .band .item-3 .card .thumb {
+      background-image: url(../img/noticia3.webp); }
+    .articulos .band .item-4 .card .thumb {
+      background-image: url(../img/noticia4.png); }
+    .articulos .band .item-5 .card .thumb {
+      background-image: url(../img/noticia5.png); }
+    .articulos .band .item-6 .card .thumb {
+      background-image: url(../img/noticia6.png); }
+    .articulos .band .item-7 .card .thumb {
+      background-image: url(../img/noticia7.png); }
+
+/**-----HISTORIA-----**/
+.historia-historia {
+  background-color: white;
+  display: flex;  
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+  color: #676767;
+  margin: 30px 0; }
+  .historia-historia .historia-historia-izquierda {
+    width: 50%; }
+    .historia-historia .historia-historia-izquierda h2 {
+      font-size: 25px;
+      font-weight: bold;
+      color: #4ba9ab;
+      margin-bottom: 50px; }
+      .historia-historia .historia-historia-izquierda h2 span {
+        color: #999999;
+        font-size: 20px;
+        font-weight: 500; }
+    .historia-historia .historia-historia-izquierda p {
+      font-size: 17px;
+      text-align: justify;
+      margin-bottom: 10px; }
+  .historia-historia .historia-historia-derecha {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%; }
+    .historia-historia .historia-historia-derecha div {
+      background-color: rgba(233, 233, 233, 0.692);
+      align-items: center;
+      width: 100%;
+      text-align: center;
+      margin: 30px; }
+      .historia-historia .historia-historia-derecha div h3 {
+        background-color: #4ba9ab;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        border-radius: 5px 5px 0 0;
+        font-weight: bold;
+        font-size: 19px; }
+      .historia-historia .historia-historia-derecha div p {
+        font-size: 17px;
+        text-align: center;
+        font-weight: bold;
+        margin: 5px;
+        padding: 0 10px 10px 10px; }
+        .historia-historia .historia-historia-derecha div p span {
+          font-size: 16px;
+          font-weight: normal; }
+
+.historias-historia-general {
+  background-color: rgba(233, 233, 233, 0.692);
+  width: 100%;
+  margin: 50px auto 0 auto; }
+  .historias-historia-general h2 {
+    background-image: linear-gradient(to right, #4ba9ab 50%, rgba(0, 187, 255, 0.79) 100%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 28px;
+    margin: 0; }
+  .historias-historia-general .historias-historia {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    padding-bottom: 100px;
+    color: #676767; }
+    .historias-historia-general .historias-historia .contenedor-historia {
+      width: 330px;
+      height: auto;
+      overflow: hidden;
+      border-radius: 1px;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+      transition: all 0.25s ease-in;
+      border-bottom: 5px solid transparent;
+      margin: 10px; }
+      .historias-historia-general .historias-historia .contenedor-historia:hover {
+        transform: translateY(-5px);
+        border: none;
+        border-bottom: 5px solid #4da078; }
+      .historias-historia-general .historias-historia .contenedor-historia img {
+        width: 100%; }
+      .historias-historia-general .historias-historia .contenedor-historia div {
+        padding: 32px; }
+        .historias-historia-general .historias-historia .contenedor-historia div h3 {
+          margin-bottom: 16px;
+          font-size: 20px; }
+        .historias-historia-general .historias-historia .contenedor-historia div p {
+          margin-bottom: 30px; }
+        .historias-historia-general .historias-historia .contenedor-historia div a {
+          text-decoration: none;
+          font-size: 14px;
+          outline: none;
+          color: #4da078;
+          text-transform: uppercase;
+          font-weight: bold; }
+          .historias-historia-general .historias-historia .contenedor-historia div a:hover {
+            color: #57c891; }
+
+.mitos-leyendas .mitos-leyendas-texts {
+  background-color: white;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 100px; }
+  .mitos-leyendas .mitos-leyendas-texts h3 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #4ba9ab;
+    margin: 30px 20px 10px 20px;
+    text-align: center; }
+  .mitos-leyendas .mitos-leyendas-texts h4 {
+    font-size: 17px;
+    text-align: justify;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: bold; }
+  .mitos-leyendas .mitos-leyendas-texts div {
+    width: 80%;
+    height: auto;
+    margin: 40px auto; }
+    .mitos-leyendas .mitos-leyendas-texts div img {
+      display: block;
+      width: 100%;
+      height: auto; }
+    .mitos-leyendas .mitos-leyendas-texts div p {
+      font-size: 15px;
+      font-style: italic;
+      margin: 15px 30% 30px 0;
+      color: #909090; }
+  .mitos-leyendas .mitos-leyendas-texts p {
+    font-size: 17px;
+    text-align: justify;
+    margin: 20px 20%;
+    color: #676767; }
+  .mitos-leyendas .mitos-leyendas-texts h5 {
+    font-size: 17px;
+    text-align: justify;
+    margin: 20px 20%;
+    color: #676767;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    font-style: italic;
+    font-weight: normal; }
+
+/**-----HUAYHUASH-----**/
+/**-----CARHUCOCHA----**/
+/**-----MITUCOCHA-----**/
+/**-----JANCA-----**/
+.historia-lugares {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  color: #676767;
+  margin: 20px 0; }
+  .historia-lugares .historia-lugares-contenedor {
+    width: 94%; }
+    .historia-lugares .historia-lugares-contenedor h2 {
+      font-size: 25px;
+      font-weight: bold;
+      color: #4ba9ab;
+      margin-bottom: 20px; }
+      .historia-lugares .historia-lugares-contenedor h2 span {
+        color: #999999;
+        font-size: 20px;
+        font-weight: 500; }
+    .historia-lugares .historia-lugares-contenedor p {
+      font-size: 17px;
+      text-align: justify;
+      margin-bottom: 10px; }
+
+.grid-galeria {
+  width: 92.5%;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 400px;
+  gap: 15px;
+  justify-content: center; }
+  .grid-galeria div {
+    position: relative; }
+    .grid-galeria div img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  .grid-galeria .img-1 img {
+    border-radius: 5px 0 0 0; }
+  .grid-galeria .img-3 {
+    grid-row: span 2; }
+    .grid-galeria .img-3 img {
+      border-radius: 0 5px 0 0; }
+  .grid-galeria .img-4 {
+    grid-column: span 2; }
+  .grid-galeria .img-5 {
+    grid-row: span 2; }
+    .grid-galeria .img-5 img {
+      border-radius: 0 0 0 5px; }
+  .grid-galeria .img-7 {
+    grid-row: span 2; }
+    .grid-galeria .img-7 img {
+      border-radius: 0 0 5px 0; }
+
+.info-historia {
+  background-color: rgba(233, 233, 233, 0.692);
+  width: 92.5%;
+  margin: 50px auto 80px auto;
+  border-radius: 10px; }
+  .info-historia h2 {
+    background-image: linear-gradient(to right, #4ba9ab 50%, rgba(0, 187, 255, 0.79) 100%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    font-weight: bold;
+    font-size: 25px; }
+  .info-historia .info-historia-contenedor {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; }
+    .info-historia .info-historia-contenedor div {
+      width: 300px;
+      height: 400px;
+      text-align: center;
+      margin: 20px;
+      box-shadow: 1px 2px 17px -2px rgba(0, 0, 0, 0);
+      -webkit-box-shadow: 1px 2px 17px -2px rgba(0, 0, 0, 0.19);
+      -moz-box-shadow: 1px 2px 17px -2px rgba(0, 0, 0, 0);
+      border-radius: 5px; }
+      .info-historia .info-historia-contenedor div:hover {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.242); }
+      .info-historia .info-historia-contenedor div img {
+        width: 100%;
+        height: 200px;
+        border-radius: 5px 5px 0 0; }
+      .info-historia .info-historia-contenedor div h3 {
+        margin: 20px 20px 5px 20px;
+        font-size: 20px;
+        text-align: left; }
+      .info-historia .info-historia-contenedor div p {
+        font-size: 15px;
+        margin: 5px 20px 20px 20px;
+        text-align: left; }
+      .info-historia .info-historia-contenedor div a {
+        text-decoration: none;
+        display: block;
+        color: rgba(255, 255, 255, 0.9) !important;
+        font-weight: bold;
+        font-size: 14px;
+        background: #4ba9ab;
+        padding: 10px 20px;
+        border-radius: 5px;
+        margin: 10px 100px 50px 20px;
+        font-weight: bold; }
+        .info-historia .info-historia-contenedor div a:hover {
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.242); }
+
+/**-----CONTACTO-----**/
+.hero-contacto {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  z-index: -1; }
+  .hero-contacto img {
+    width: 100%;
+    height: auto; }
+  .hero-contacto h2 {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 70px;
+    font-weight: bold; }
+
+.contacto-contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .contacto-contacto .contacto-container {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    padding: 60px;
+    width: 90%;
+    margin: 80px 0px;
+    background-color: rgba(233, 233, 233, 0.692);
+    border-radius: 5px;
+    gap: 20px; }
+    .contacto-contacto .contacto-container .contacto-box-info {
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      gap: 50px; }
+      .contacto-contacto .contacto-container .contacto-box-info h2 {
+        text-align: left;
+        color: #4ba9ab;
+        font-weight: bold;
+        font-size: 36px; }
+      .contacto-contacto .contacto-container .contacto-box-info .contacto-datos {
+        display: flex;
+        flex-direction: column;
+        gap: 5px; }
+        .contacto-contacto .contacto-container .contacto-box-info .contacto-datos p {
+          font-size: 17px;
+          color: #676767; }
+          .contacto-contacto .contacto-container .contacto-box-info .contacto-datos p i {
+            color: #4da078;
+            margin-right: 10px;
+            font-size: 25px; }
+      .contacto-contacto .contacto-container .contacto-box-info .contacto-links {
+        display: flex;
+        gap: 15px; }
+        .contacto-contacto .contacto-container .contacto-box-info .contacto-links a {
+          text-decoration: none;
+          width: 40px;
+          height: 40px;
+          background: rgba(75, 170, 171, 0.788);
+          text-align: center;
+          transition: .1s;
+          border-radius: 5px; }
+          .contacto-contacto .contacto-container .contacto-box-info .contacto-links a i {
+            color: #fff;
+            line-height: 40px;
+            font-size: 20px; }
+    .contacto-contacto .contacto-container form {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      gap: 15px;
+      margin: 50px 0; }
+      .contacto-contacto .contacto-container form .contacto-input-box input {
+        width: 100%;
+        height: 45px;
+        padding: 0 20px;
+        outline: none;
+        background: rgba(255, 255, 255, 0.593);
+        border: 3px solid transparent;
+        transition: .3s;
+        color: #000000;
+        border-radius: 3px; }
+        .contacto-contacto .contacto-container form .contacto-input-box input::placeholder {
+          color: #a3a3a3; }
+        .contacto-contacto .contacto-container form .contacto-input-box input:focus {
+          border-bottom: 3px solid rgba(75, 170, 171, 0.788);
+          animation: shake .2s; }
+      .contacto-contacto .contacto-container form .contacto-input-box textarea {
+        width: 100%;
+        height: 130px;
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.593);
+        border: 3px solid transparent;
+        outline: none;
+        transition: .3s;
+        color: #000000;
+        border-radius: 3px; }
+        .contacto-contacto .contacto-container form .contacto-input-box textarea::placeholder {
+          color: #a3a3a3; }
+        .contacto-contacto .contacto-container form .contacto-input-box textarea:focus {
+          border-bottom: 3px solid rgba(75, 170, 171, 0.788);
+          animation: shake .2s; }
+      .contacto-contacto .contacto-container form button {
+        width: 100%;
+        padding: 10px;
+        outline: none;
+        background: #4da078;
+        color: #fff;
+        font-weight: bold;
+        border: none;
+        transition: .1s;
+        cursor: pointer;
+        font-size: 1rem;
+        border-radius: 5px; }
+        .contacto-contacto .contacto-container form button:hover {
+          background: #57c891; }
+
+/**----FOOTER----**/
+footer {
+  background-color: black;
+  justify-content: space-between;
+  color: #ffffff;
+  text-align: center; }
+  footer .footer-top {
+    display: flex;
+    justify-content: space-around;
+    gap: 0px;
+    align-items: center;
+    padding: 30px;
+    color: white; }
+    footer .footer-top a img {
+      width: 170px;
+      margin: 25px; }
+    footer .footer-top .footer-lugares h3 {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 20px; }
+    footer .footer-top .footer-lugares ul {
+      width: auto;
+      list-style: none;
+      padding: 0; }
+      footer .footer-top .footer-lugares ul li a {
+        font-size: 15px;
+        text-decoration: none;
+        color: white; }
+        footer .footer-top .footer-lugares ul li a:hover {
+          color: #4ba9ab; }
+    footer .footer-top .footer-contacto {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      gap: 20px;
+      padding: 10px;
+      color: white;
+      margin-bottom: 30px;
+      flex-wrap: wrap; }
+      footer .footer-top .footer-contacto .footer-contacto-datos h3 {
+        text-align: justify;
+        font-size: 16px;
+        font-weight: bold;
+        margin: 15px 0; }
+      footer .footer-top .footer-contacto .footer-contacto-datos p {
+        text-align: justify;
+        font-size: 15px;
+        margin: 0; }
+        footer .footer-top .footer-contacto .footer-contacto-datos p i {
+          font-size: 16px;
+          margin-right: 5px; }
+          footer .footer-top .footer-contacto .footer-contacto-datos p i:hover {
+            color: #4ba9ab; }
+      footer .footer-top .footer-contacto .footer-contacto-redes h3 {
+        text-align: justify;
+        font-size: 16px;
+        font-weight: bold;
+        margin: 15px 0;}
+      footer .footer-top .footer-contacto .footer-contacto-redes a i {
+        font-size: 25px;  
+        margin-right: 25px;
+        color: white; }
+        footer .footer-top .footer-contacto .footer-contacto-redes a i:hover {
+          color: #4ba9ab; }
+  footer .footer-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid #808080; }
+    footer .footer-bottom p {
+      font-size: 14px;
+      margin: 16px 0;
+      padding: 10px;
+      color: #808080; }
+      footer .footer-bottom p span a {
+        text-decoration: none;
+        color: #4ba9ab; }
+        footer .footer-bottom p span a:hover {
+          color: #808080; }
+
+@media screen and (max-width: 1020px) {
+  /**-----INDEX-----**/
+  .articulos .articulos-subtitulo {
+    font-size: 30px; }
+  .articulos .band {
+    grid-template-columns: repeat(3, 1fr); }
+    .articulos .band .item-1 {
+      grid-column: 1 / span 2; }
+    .articulos .band .item-2 {
+      grid-column: 1fr; }
+    .articulos .band .item-3 {
+      grid-column: 1fr; }
+    .articulos .band .item-4 {
+      grid-column: 2 / span 2; }
+    .articulos .band .item-5 {
+      grid-column: 1 / span 2; }
+    .articulos .band .item-6 {
+      grid-column: 1fr; }
+    .articulos .band .item-7 {
+      grid-column: 1 / span 3; } }
+
+@media screen and (max-width: 990px) {
+  /**-----INDEX-----**/
+  .historia {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 20px;
+    margin: 0; }
+    .historia div {
+      width: 90%; }
+    .historia img {
+      width: 90%; }
+  .ubicacion {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 20px;
+    margin: 0px; }
+    .ubicacion div {
+      width: 90%; }
+    .ubicacion img {
+      width: 90%; }
+  /**-----HISTORIA-----**/
+  .historia-historia {
+    display: flex;
+    flex-direction: column; }
+    .historia-historia .historia-historia-izquierda {
+      width: 95%; }
+    .historia-historia .historia-historia-derecha {
+      width: 95%;
+      padding-top: 20px; }
+      .historia-historia .historia-historia-derecha div {
+        width: 100%; }
+        .historia-historia .historia-historia-derecha div p {
+          margin: 0;
+          padding: 0 0 10px 0; }
+  /**-----HUAYHUASH-----**/
+  /**-----CARHUCOCHA----**/
+  /**-----MITUCOCHA-----**/
+  /**-----JANCA-----**/
+  .grid-galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+    .grid-galeria .img-1 img {
+      border-radius: 5px 0 0 0; }
+    .grid-galeria .img-2 {
+      grid-row: span 2; }
+      .grid-galeria .img-2 img {
+        border-radius: 0 5px 0 0; }
+    .grid-galeria .img-3 {
+      grid-row: span 1; }
+      .grid-galeria .img-3 img {
+        border-radius: 0; }
+    .grid-galeria .img-4 {
+      grid-column: span 2; }
+    .grid-galeria .img-5 {
+      grid-row: span 2; }
+      .grid-galeria .img-5 img {
+        border-radius: 0 0 0 5px; }
+    .grid-galeria .img-7 {
+      grid-row: span 2; }
+      .grid-galeria .img-7 img {
+        border-radius: 0 0 5px 0; }
+    .grid-galeria .img-8 img {
+      border-radius: 0 0 0 5px; } }
+
+@media screen and (max-width: 900px) {
+  /**-----FOOTER-----**/
+  footer .footer-top a img {
+    width: 170px;
+    margin: 0; }
+  footer .footer-top .footer-contacto .footer-contacto-datos h3 {
+    text-align: center;
+    padding: 0; }
+  footer .footer-top .footer-contacto .footer-contacto-datos p {
+    text-align: center;
+    padding: 0; }
+  footer .footer-top .footer-contacto .footer-contacto-redes h3 {
+    text-align: center;
+    padding: 0; }
+  footer .footer-top .footer-contacto .footer-contacto-redes a i {
+    font-size: 25px;
+    margin: 10px; } }
+
+@media screen and (max-width: 820px) {
+  /**-----INDEX-----**/
+  .hero p {
+    font-size: 18px;
+    margin: 30px 0 30px 0; }
+  .hero h1 {
+    font-size: 50px;
+    font-weight: bold; }
+  .articulos .articulos-subtitulo {
+    font-size: 30px; }
+  .articulos .band {
+    grid-template-columns: repeat(4, 1fr); }
+    .articulos .band .item-1 {
+      grid-column: 1 / span 2; }
+      .articulos .band .item-1 .card article h3 {
+        font-size: 20px; }
+    .articulos .band .item-2 {
+      grid-column: 3 / span 2; }
+    .articulos .band .item-3 {
+      grid-column: 1 / span 2; }
+    .articulos .band .item-4 {
+      grid-column: 3 / span 2; }
+    .articulos .band .item-5 {
+      grid-column: 1 / span 2; }
+    .articulos .band .item-6 {
+      grid-column: 3 / span 2; }
+    .articulos .band .item-7 {
+      grid-column: 1 / span 4; }
+  /**-----HISTORIA-----**/
+  .mitos-leyendas .mitos-leyendas-texts h4 {
+    margin-bottom: 30px;
+    margin-right: 20px;
+    margin-left: 20px; }
+  .mitos-leyendas .mitos-leyendas-texts div p {
+    margin: 15px 20% 30px 0; }
+  .mitos-leyendas .mitos-leyendas-texts p {
+    margin: 20px 10%; }
+  .mitos-leyendas .mitos-leyendas-texts h5 {
+    margin: 20px 10%; } }
+
+@media screen and (max-width: 700px) {
+  /**-----HUAYHUASH-----**/
+  /**-----CARHUCOCHA----**/
+  /**-----MITUCOCHA-----**/
+  /**-----JANCA-----**/
+  .grid-galeria {
+    grid-auto-rows: 250px; }
+    .grid-galeria div {
+      position: relative; }
+      .grid-galeria div img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .grid-galeria .img-1 img {
+      border-radius: 5px 0 0 0; }
+    .grid-galeria .img-2 {
+      grid-row: span 2; }
+      .grid-galeria .img-2 img {
+        border-radius: 0 5px 0 0; }
+    .grid-galeria .img-3 {
+      grid-row: span 1; }
+      .grid-galeria .img-3 img {
+        border-radius: 0; }
+    .grid-galeria .img-4 {
+      grid-column: span 2; }
+    .grid-galeria .img-5 {
+      grid-row: span 2; }
+      .grid-galeria .img-5 img {
+        border-radius: 0 0 0 5px; }
+    .grid-galeria .img-7 {
+      grid-row: span 2; }
+      .grid-galeria .img-7 img {
+        border-radius: 0 0 5px 0; }
+    .grid-galeria .img-8 img {
+      border-radius: 0 0 0 5px; }
+  .info-historia {
+    width: 100%;
+    border-radius: 0; }
+    .info-historia h2 {
+      border-radius: 0; } }
+
+@media screen and (max-width: 615px) {
+  /**-----FOOTER-----**/
+  footer .footer-top {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    padding: 30px;
+    color: white; }
+    footer .footer-top a img {
+      width: 150px;
+      margin: 20px; } }
+
+@media screen and (max-width: 600px) {
+  /**-----INDEX-----**/
+  .historia {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 20px 0;
+    margin: 0px; }
+    .historia div {
+      width: 90%; }
+      .historia div h2 {
+        font-size: 25px; }
+      .historia div p {
+        font-size: 16px; }
+      .historia div a {
+        font-size: 14px; }
+    .historia img {
+      width: 90%; }
+  .ubicacion {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 20px 0;
+    margin: 0px; }
+    .ubicacion div {
+      width: 90%; }
+      .ubicacion div h2 {
+        font-size: 25px; }
+      .ubicacion div p {
+        font-size: 16px; }
+      .ubicacion div a {
+        font-size: 14px; }
+    .ubicacion img {
+      width: 90%; }
+  /**-----HISTORIA-----**/
+  .historia-historia {
+    padding: 20px; }
+    .historia-historia .historia-historia-izquierda {
+      width: 100%; }
+      .historia-historia .historia-historia-izquierda h2 {
+        margin-bottom: 20px;
+        font-size: 22px; }
+        .historia-historia .historia-historia-izquierda h2 span {
+          font-size: 18px; }
+      .historia-historia .historia-historia-izquierda p {
+        font-size: 16px; }
+    .historia-historia .historia-historia-derecha div h3 {
+      font-size: 18px; }
+    .historia-historia .historia-historia-derecha div p {
+      font-size: 16px; }
+      .historia-historia .historia-historia-derecha div p span {
+        font-size: 15px; }
+  /**-----HUAYHUASH-----**/
+  /**-----CARHUCOCHA----**/
+  /**-----MITUCOCHA-----**/
+  /**-----JANCA-----**/
+  .historia-lugares .historia-lugares-contenedor {
+    width: 100%; }
+    .historia-lugares .historia-lugares-contenedor h2 {
+      font-size: 22px; }
+      .historia-lugares .historia-lugares-contenedor h2 span {
+        font-size: 18px; }
+    .historia-lugares .historia-lugares-contenedor p {
+      font-size: 16px; }
+  /**-----CONTACTO-----**/
+  .hero-contacto h2 {
+    font-size: 40px; }
+  .contacto-contacto .contacto-container {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; }
+    .contacto-contacto .contacto-container .contacto-box-info {
+      gap: 15px; }
+      .contacto-contacto .contacto-container .contacto-box-info h2 {
+        font-size: 20px;
+        font-weight: bold; }
+      .contacto-contacto .contacto-container .contacto-box-info .contacto-datos {
+        margin-bottom: 20px; }
+        .contacto-contacto .contacto-container .contacto-box-info .contacto-datos p {
+          font-size: 16px;
+          margin: 0; }
+          .contacto-contacto .contacto-container .contacto-box-info .contacto-datos p i {
+            font-size: 20px; } }
+
+@media screen and (max-width: 500px) {
+  /**-----INDEX-----**/
+  .hero p {
+    font-size: 18px;
+    margin: 30px 0 30px 0; }
+  .hero h1 {
+    font-size: 40px;
+    font-weight: bold; }
+  .articulos .articulos-subtitulo {
+    font-size: 25px; }
+  .articulos .band {
+    width: 90%;
+    grid-template-columns: 1fr 1fr; }
+    .articulos .band .item-1 {
+      grid-column: 1 / span 2; }
+      .articulos .band .item-1 .card article h3 {
+        font-size: 18px; }
+      .articulos .band .item-1 .card article span {
+        font-size: 11px; }
+    .articulos .band .item-2 {
+      grid-column: 1 / span 2; }
+      .articulos .band .item-2 .card article h3 {
+        font-size: 18px; }
+      .articulos .band .item-2 .card article span {
+        font-size: 11px; }
+    .articulos .band .item-3 {
+      grid-column: 1 / span 2; }
+      .articulos .band .item-3 .card article h3 {
+        font-size: 18px; }
+      .articulos .band .item-3 .card article span {
+        font-size: 11px; }
+    .articulos .band .item-4 {
+      grid-column: 1 / span 2; }
+      .articulos .band .item-4 .card article h3 {
+        font-size: 18px; }
+      .articulos .band .item-4 .card article span {
+        font-size: 11px; }
+    .articulos .band .item-5 {
+      grid-column: 1 / span 2; }
+      .articulos .band .item-5 .card article h3 {
+        font-size: 18px; }
+      .articulos .band .item-5 .card article span {
+        font-size: 11px; }
+    .articulos .band .item-6 {
+      grid-column: 1 / span 2; }
+      .articulos .band .item-6 .card article h3 {
+        font-size: 18px; }
+      .articulos .band .item-6 .card article span {
+        font-size: 11px; }
+    .articulos .band .item-7 {
+      grid-column: 1 / span 2; }
+      .articulos .band .item-7 .card article h3 {
+        font-size: 18px; }
+      .articulos .band .item-7 .card article span {
+        font-size: 11px; }
+  /**-----HISTORIA-----**/
+  .mitos-leyendas .mitos-leyendas-texts h3 {
+    font-size: 20px; }
+  .mitos-leyendas .mitos-leyendas-texts h4 {
+    font-size: 16px; }
+  .mitos-leyendas .mitos-leyendas-texts div {
+    width: 90%;
+    height: auto;
+    margin: 40px auto; }
+    .mitos-leyendas .mitos-leyendas-texts div p {
+      font-size: 14px;
+      margin: 15px 0 30px 0; }
+  .mitos-leyendas .mitos-leyendas-texts p {
+    font-size: 16px;
+    margin: 20px 5%; }
+  .mitos-leyendas .mitos-leyendas-texts h5 {
+    font-size: 16px;
+    margin: 20px 5%; }
+  /**-----CONTACTO-----**/
+  .hero-contacto {
+    display: none; }
+  .contacto-contacto .contacto-container {
+    width: 100%;
+    margin: 0;
+    padding: 50px; }
+    .contacto-contacto .contacto-container .contacto-box-info {
+      align-items: center;
+      text-align: center; }
+      .contacto-contacto .contacto-container .contacto-box-info h1 {
+        font-size: 24px; } }

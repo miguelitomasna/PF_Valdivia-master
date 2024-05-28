@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/**-----RESET-----*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/**-----BODY-----**/
+body {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/**-----INDEX-----**/
+/**-------HEADER-BOOTSTRAP-------**/
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    .menu-ajustes{
+        background-color: white;
+        padding: 14px 50px;
+        box-shadow: 0 2px 5px rgba(42, 42, 42, 0.085);
+    }
+    nav{
+        div{
+            a{
+                img{
+                    width: auto;
+                    height: 30px;
+                }
+            }
+            .navbar-collapse{
+                flex-grow: 0;
+                ul{
+                    li{
+                        .tamano-link{
+                            font-size: 16px;
+                            font-weight: 400;
+                        }
+                        ul{
+                            .tamano-link-dropdown{
+                                font-size: 16px;
+                                font-weight: 400;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/**-------HEADER-BOOTSTRAP-MEDIA-QUERYS-------**/
+@media screen and (max-width: 600px) {
+    header{
+        .menu-ajustes{
+            padding: 14px 5px;
+        }
+    }
+}
+
+/**-----HISTORIA-----**/
+/**-----HERO-HISTORIA-BOOTSTRAP-----**/
+.hero-historia{
+    div{
+        div{
+            div{
+                .carusel-contenido{
+                    h5{
+                        font-size: 32px;
+                        font-weight: bold;
+                    }
+                    p{
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+        .profuncidad-carusel{
+            z-index: 0;
+        }
+    }
+}
+
+/**-----VARIBLES-----**/
+$color-primario: rgb(255, 255, 255);
+$color-secundario: rgb(0, 0, 0);
+$color-terciario: rgb(77, 160, 120);
+$color-cuaternario: rgb(75, 169, 171);
+$color-quintenario: rgb(103, 103, 103);
+$color-sextario: rgba(255, 255, 255, 0.216);
+
+/**-----LISTAS-----**/
+$font-size:
+14px,
+15px,
+16px,
+17px,
+20px,
+24px;
+
+/**-----INDEX-----**/
+/**-----EXTENDS-----**/
+%historia-ubicacion-propiedades{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    color: #676767;
+    margin: 50px 0;
+    div{
+        width: 50%;
+        h2{
+            font-size: 30px;
+            color: rgb(75, 169, 171);
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        p{
+            font-size: 17px;
+            text-align: justify;
+            margin-bottom: 30px;
+        }
+        a{
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.9) !important;
+            font-weight: bold;
+            font-size: 15px;
+            background: #4da078;
+            padding: 15px 50px;
+            border-radius: 5px;
+            &:hover{
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.242);
+            }
+        }
+    }
+    img{
+        width: 40%;
+        border-radius: 3px;
+    }
+}
+%articulos-card-propiedades{
+    background: white;
+    color: #444;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    position: relative;
+    top: 0;
+    transition: all .1s ease-in;
+    text-decoration: none;
+    &:hover{
+        top: -2px;
+        box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    }
+    .thumb{
+        padding-bottom: 60%;
+        background-size: cover;
+        background-position: center center;
+    }
+    article{
+        padding: 20px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        h3{
+            font-size: 20px;
+            margin: 0;
+            color: #333;
+        }
+        p{
+            flex: 1;
+            line-height: 1.4;
+            margin-top: 10px;
+            &:hover{
+                color: rgb(75, 169, 171);
+            }
+        }
+        span{
+            font-size: 12px;
+            font-weight: bold;
+            color: #999;
+            text-transform: uppercase;
+            letter-spacing: .05em;
+            margin: 2em 0 0 0;
+        }
+    }
+}
+
